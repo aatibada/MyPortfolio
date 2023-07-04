@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  margin: 0;
+}
+
+nav ul {
+  height: 4rem;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  margin: 0;
+  z-index: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav li {
+  font-size: 0.875rem;
+  padding: 0.3125rem 1.875rem;
+}
+
+main {
+  font-family: 'Lobster Two', cursive;
+  font-size: 1.25rem;
+  height: 53.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.about-me {
+
+}
+
+.about-me img {
+  height: 22.5rem;
+  width: 22.5rem;
+  border-radius: 100%;
+}
