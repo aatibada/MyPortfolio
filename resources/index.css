@@ -4,7 +4,6 @@ html {
   font-family: 'Playfair Display', serif;
   text-align: center;
   background-color: #F6EEE9;
-  height: 100%;
 }
 
 body {
@@ -168,12 +167,13 @@ h2 {
 }
 
 .project {
-  height: 25rem;
-  width: 20rem;
-  padding: 3rem 5rem;
+  max-height: 20rem;
+  max-width: 20rem;
+  padding: 3rem;
   border-radius: 8%;
   background-color: #EADBDD;
   box-shadow: 2px 2px 3px #DED1D2;
+  transition: transform 250ms ease-in;
 }
 
 .project-list a {
@@ -182,9 +182,18 @@ h2 {
   margin: 1.5rem 2rem;
 }
 
+a:hover .project {
+  transform: scale(1.07);
+}
+
  a:active .project {
   background-color: #DED1D2;
   box-shadow: none;
+  transform: scale(1);
+}
+
+.pop-up {
+  display: none;
 }
 
 .skills {
@@ -209,7 +218,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 
 footer img {
   height: 2rem;
