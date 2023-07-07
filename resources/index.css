@@ -118,6 +118,7 @@ h1 span {
   display: flex;
   justify-content: space-evenly;
   padding: 3rem 12rem;
+  flex-wrap: wrap;
 }
 
 h2 {
@@ -127,9 +128,16 @@ h2 {
 }
 
 .about-me img {
-  height: 24rem;
-  width: 24rem;
+  max-height: 21rem;
+  max-width: 21rem;
   border-radius: 20%;
+}
+
+@media only screen and (max-width: 1215px) {
+  .about-me img {
+    max-height: 15rem;
+    max-width: 15rem;
+  }
 }
 
 .about-me h2 {
